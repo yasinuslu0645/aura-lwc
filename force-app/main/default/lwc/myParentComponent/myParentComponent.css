@@ -1,0 +1,18 @@
+h1{
+    color: red;
+
+}
+p{
+    color: green;
+}
+/*calisir. child'a bir butun halinde stil verebiliriz */
+c-my-child-component{
+    color: blueviolet;
+    --renk: black;
+    
+}
+
+/* Calismaz.child'in icindeki elemanlari parent'tan nokta atisi degistiremeyiz. */
+/* c-my-child-component h1{
+    color: blue;
+} */

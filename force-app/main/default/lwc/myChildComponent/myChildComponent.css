@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+}
+lightning-card{
+    color: brown;
+}
+
+/* h2{
+    color: yellow;
+} dinamik degil. hooks yaparsam parenttan bu degeri degistirebilirim */
+h2{
+    color: var(--renk, yellow);
+}
+
+
+
+/* let kullanilmaz cunku scoped elemandir. Bu degiskeni (--renk) artik parentta kullanabiliriz */

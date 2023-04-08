@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:attribute name="childAttr" type="String" default="childBound"></aura:attribute>
+    <div>Child Attribute = {!v.childAttr}</div> 
+
+</aura:component>	

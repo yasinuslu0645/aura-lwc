@@ -1,0 +1,28 @@
+<template>
+    
+<lightning-card title="for each dongusu"> <!-- 2 -->
+
+    <template for:each={cityList} for:item="w">
+        <p key={w}>{w}</p> <!-- key={w.id} de yazilabilirdi -->
+    </template>
+
+</lightning-card>
+<!-- ------------------------------------- -->
+<lightning-card title="Musteri Listesi">
+<ul>
+    <template for:each={customerList} for:item="w">
+        
+        <li key={w.id}> <!-- sadece w'da yazabilirdik -->
+            <div>{w.id}</div>
+            <div>{w.name}</div>
+            <div>{w.phone}</div>
+            <div>{w.email}</div>
+            <!-- <div>{w.imgURL}</div> seklinde yazarsak sadece text gosterir-->
+            <img src={w.imgURL} alt="">
+        </li>
+
+    </template>
+</ul>
+</lightning-card>
+
+</template>
